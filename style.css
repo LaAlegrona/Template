@@ -24,8 +24,8 @@
 td:hover *[contenteditable],
 td:focus *[contenteditable],
 img.hover {
-    background: #DEF;
-    box-shadow: 0 0 1em 0.5em #DEF;
+    background: #A3C644; /* Verde hoja */
+    box-shadow: 0 0 1em 0.5em #C4D600; /* Verde claro */
 }
 
 span[contenteditable] {
@@ -34,70 +34,70 @@ span[contenteditable] {
 
 /* heading */
 h1 {
-    font: bold 90% sans-serif; /* Moderadamente reducido */
+    font: bold 90% sans-serif;
     letter-spacing: 0.3em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1.5em; /* Espacio después del título */
+    margin-bottom: 1.5em;
 }
 
 /* table */
 table {
-    font-size: 75%; /* Moderadamente reducido */
+    font-size: 75%;
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid #000; /* Borde sólido para todas las celdas */
-    padding: 0.5em; /* Aumento leve de padding */
+    border: 1px solid #000;
+    padding: 0.5em;
     position: relative;
     text-align: left;
-    font-size: 0.9em; /* Moderadamente reducido */
+    font-size: 0.9em;
 }
 
 th {
-    background: #EEE;
+    background: #F4EFE5; /* Fondo crema */
 }
 
 /* page */
 html {
-    font: 14px/1 'Open Sans', sans-serif; /* Ajustado a tamaño razonable */
+    font: 14px/1 'Open Sans', sans-serif;
     overflow: auto;
     padding: 0.5in;
-    background: #999;
+    background: #C4D600; /* Verde claro como fondo general */
     cursor: default;
 }
 
 body {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0.3in; /* Espacio reducido pero suficiente */
+    padding: 0.3in;
     background: #FFF;
     box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
 }
 
 /* header */
 header {
-    margin: -1em 0 2em; /* Espacio reducido para subir el cuadro */
-    overflow: hidden; /* Manejar el colapso del margen superior */
+    margin: -1em 0 2em;
+    overflow: hidden;
 }
 
 header h1 {
-    background: #27649d;
+    background: #8B5A2B; /* Marrón oscuro del logo */
     border-radius: 0.25em;
     color: #FFF;
     margin: 0;
-    padding: 0.75em 0; /* Ajuste de padding */
+    padding: 0.75em 0;
 }
 
 header address {
-  float: left;
-  font-size: 1rem; /* Ajustado ligeramente */
-  font-style: normal;
-  line-height: 1.25;
-  margin: 1em 1em 1em 0;
+    float: left;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.25;
+    margin: 1em 1em 1em 0;
 }
 
 header span,
@@ -105,8 +105,8 @@ header img {
     display: block;
     float: right;
     margin: 1em 0 1em 1em;
-    max-height: 15%; /* Mantener tamaño de imagen más pequeño */
-    max-width: 50%; /* Mantener tamaño de imagen más pequeño */
+    max-height: 15%;
+    max-width: 50%;
     position: relative;
 }
 
@@ -165,7 +165,6 @@ table.balance:after {
     clear: both;
 }
 
-/* table meta */
 table.meta th {
     width: 40%;
 }
@@ -178,6 +177,8 @@ table.meta td {
 table.inventory th {
     font-weight: bold;
     text-align: center;
+    background: #A3C644; /* Verde hoja */
+    color: #000;
 }
 
 table.inventory td {
@@ -185,15 +186,15 @@ table.inventory td {
 }
 
 table {
-    font-size: 70%; /* Moderadamente reducido */
+    font-size: 70%;
     table-layout: fixed;
     width: 100%;
     border-collapse: separate;
-    border-spacing: 3px; /* Espacio entre las celdas */
+    border-spacing: 3px;
 }
 th, td {
     border-width: 1px;
-    padding: 0.5em; /* Aumento de padding */
+    padding: 0.5em;
     position: relative;
     text-align: left;
 }
@@ -202,7 +203,7 @@ th, td {
     border-style: solid;
 }
 th {
-    background: #EEE;
+    background: #F4EFE5;
     border-color: #BBB;
 }
 td {
@@ -224,14 +225,13 @@ footer h1 {
     display: block;
     float: left;
     width: 0.8em;
-    font-size: 0.9rem; /* Ajustado el tamaño */
+    font-size: 0.9rem;
     padding: 0.25em 0.5em;
-    background: #9AF;
+    background: #A3C644; /* Verde hoja */
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    background-image: -moz-linear-gradient(#00ADEE 5%, #0078A5 100%);
-    background-image: -webkit-linear-gradient(#00ADEE 5%, #0078A5 100%);
+    background-image: linear-gradient(#C4D600 5%, #8B5A2B 100%);
     border-radius: 0.5em;
-    border-color: #0076A3;
+    border-color: #8B5A2B;
     color: #FFF;
     cursor: pointer;
     font-weight: bold;
@@ -240,7 +240,7 @@ footer h1 {
 }
 
 .add:hover {
-    background: #00ADEE;
+    background: #C4D600;
 }
 
 .cut {
@@ -254,6 +254,7 @@ tr:hover .cut {
     opacity: 1;
 }
 
+/* print */
 @media print {
     * {
         -webkit-print-color-adjust: exact;
@@ -279,31 +280,31 @@ tr:hover .cut {
     margin: 0;
 }
 
-/* Agrega un estilo personalizado para la línea debajo de la dirección y el número */
+/* línea personalizada */
 .custom-line {
     border: none;
     border-bottom: 1px solid #000;
     margin: 5px 0;
 }
 
-/* Estilo para el texto más pequeño */
+/* texto pequeño */
 .small-text {
     font-size: 75%;
 }
 
 .pagos-lista {
-      margin-top: 10px;
-      list-style: none;
-      padding-left: 0;
-    }
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
 
-    .pagos-lista ul {
-      padding: 8px;
-      border: 1px solid #ddd;
-      margin-bottom: 5px;
-      background-color: #f9f9f9;
-    }
+.pagos-lista ul {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #F4EFE5;
+}
 
-    .pagos-lista ul span {
-      font-weight: bold;
-    }
+.pagos-lista ul span {
+    font-weight: bold;
+}
